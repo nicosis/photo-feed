@@ -1,0 +1,47 @@
+body{
+    margin: 0px;
+    background: lightgrey;
+    font-family: 'Handlee', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+div{
+    box-sizing: border-box; /*prevenir que el padding agregue size a los contenedores*/
+}
+header{
+    background: white;
+    padding: 10px;
+}
+header h1{
+    margin: 0px; /*porqué no se aplica directo al <header>??*/
+    text-align: center; /*centrar texto*/
+}
+.content{
+    width: 600px;
+    margin: auto; /*centrar en el eje X */
+}
+.photoPost{
+    background: white;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.photoPost img{
+    width: 100%; /*hacer que la imagen ocuper todo el cuadro*/
+}
+h2, p, span{
+    padding: 10px;
+    margin: 0;
+}
+.title{
+    width: 80%;
+    display: inline-block;
+}
+.date{
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+    color: gray;
+    padding-top: 10px;
+}
+/* .photoHeader{
+    display: flex;
+} Es una alternativa para distribiur horizontalmente el photoHeader*/
