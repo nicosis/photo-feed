@@ -1,47 +1,61 @@
-body{
+body {
     margin: 0px;
-    background: lightgrey;
+    background-color: #8AAAE5;
     font-family: 'Handlee', cursive;
     font-family: 'Poppins', sans-serif;
 }
-div{
-    box-sizing: border-box; /*prevenir que el padding agregue size a los contenedores*/
+
+div {
+    box-sizing: border-box;
+    /*prevenir que el padding agregue size a los contenedores*/
 }
-header{
-    background: white;
+
+header {
+    background-color: white;
     padding: 10px;
 }
-header h1{
-    margin: 0px; /*porqué no se aplica directo al <header>??*/
-    text-align: center; /*centrar texto*/
+
+header h1 {
+    margin: 0px;
+    /*porqué no se aplica directo al <header>??*/
+    text-align: center;
+    /*centrar texto*/
 }
-.content{
+
+.content {
     width: 600px;
-    margin: auto; /*centrar en el eje X */
+    margin: auto;
+    /*centrar en el eje X */
 }
-.photoPost{
+
+.photoPost {
     background: white;
     margin-top: 40px;
     margin-bottom: 30px;
 }
-.photoPost img{
-    width: 100%; /*hacer que la imagen ocuper todo el cuadro*/
+
+.photoPost img {
+    width: 100%;
+    /*hacer que la imagen ocuper todo el cuadro*/
 }
-h2, p, span{
+
+h2,
+p,
+span {
     padding: 10px;
     margin: 0;
 }
-.title{
-    width: 80%;
-    display: inline-block;
-}
-.date{
-    width: 20%;
-    display: inline-block;
-    text-align: right;
-    color: gray;
-    padding-top: 10px;
-}
-/* .photoHeader{
+
+.photoPost__header {
     display: flex;
-} Es una alternativa para distribiur horizontalmente el photoHeader*/
+    justify-content: space-between;
+}
+
+.photoPost__header__title {
+    align-self: center;
+}
+
+.photoPost__header__date {
+    align-self: center;
+    color: gray;
+}
