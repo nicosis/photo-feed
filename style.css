@@ -7,43 +7,31 @@ body {
 
 div {
     box-sizing: border-box;
-    /*prevenir que el padding agregue size a los contenedores*/
+    /*Ale Sanchez: prevenir que el padding agregue size a los contenedores*/
 }
 
 header {
     background-color: white;
-    padding: 10px;
+    text-align: center;
 }
 
-header h1 {
-    margin: 0px;
-    /*porqué no se aplica directo al <header>??*/
-    text-align: center;
-    /*centrar texto*/
+h1,
+h2,
+p,
+span {
+    padding: 10px;
+    margin: 0;
 }
 
 .content {
-    width: 600px;
+    max-width: 600px;
     margin: auto;
-    /*centrar en el eje X */
 }
 
 .photoPost {
     background: white;
     margin-top: 40px;
     margin-bottom: 30px;
-}
-
-.photoPost img {
-    width: 100%;
-    /*hacer que la imagen ocuper todo el cuadro*/
-}
-
-h2,
-p,
-span {
-    padding: 10px;
-    margin: 0;
 }
 
 .photoPost__header {
@@ -58,4 +46,12 @@ span {
 .photoPost__header__date {
     align-self: center;
     color: gray;
+}
+
+.photoPost img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* width: 100%; */
+    /*hacer que la imagen ocuper todo el cuadro*/
 }
